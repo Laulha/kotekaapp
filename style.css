@@ -20,7 +20,7 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   margin-left: 30px;
 }
 
@@ -29,7 +29,7 @@
     height: 4px;
     background: #000;
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .menu-btn__burger::before,
@@ -40,7 +40,7 @@
     height: 4px;
     background-color: #000;
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -70,11 +70,16 @@
  /* LE HEADER */
 
 .header {
+    background-color: #E3E6F3;
+    padding: 10px 0;
+}
+
+.header__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E3E6F3;
-    padding: 10px 30px;
+    width: 1280px;
+    margin: auto auto;
 }
 
 /* LOGO et NOM APP */
@@ -126,11 +131,12 @@
     padding: 8px 27px;
     border-radius: 7px;
     margin-left: 25px;
+    cursor: pointer;
 }
 
 /* -----bouton de téléchargement------ */
 
-/* ------- bouton de navigation ------- */
+/* bouton de navigation */
 .header__nav__menu__link {
     margin-right: 25px;
     opacity: 60%;
