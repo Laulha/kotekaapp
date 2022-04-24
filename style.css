@@ -165,8 +165,17 @@
 
 @media screen and (max-width: 500px) {
     .telecharger {
-        display: none;
+        position: absolute;
+        top: 22px;
+        right: -150px;
+        transition: all .3s ease-in-out;
     }
+
+    .telecharger.open {
+        right: 140px;
+    }
+
+    
 }
 
 
