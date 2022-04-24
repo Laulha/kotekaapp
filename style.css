@@ -72,6 +72,7 @@
 .header {
     background-color: #E3E6F3;
     padding: 10px 0;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
 }
 
 .header__main {
