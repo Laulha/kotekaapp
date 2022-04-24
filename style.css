@@ -189,11 +189,25 @@
         right: 0;
     }
 
+    .overlay-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+    }
+
     .header__nav__menu__link {
         margin-bottom: 25px;
         opacity: 60%;
         font-size: 18px;
         transition: opacity .2s ease-in;
+    }
+
+    .overlay-menu-mobile.open {
+        display: block;
     }
 
     .menu-btn {
