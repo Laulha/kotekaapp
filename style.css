@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
+
+/* BOUTON HAMBURGER */
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  margin-left: 30px;
+}
+
+.menu-btn__burger {
+    width: 30px;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(8px); 
+  }
+  
+.menu-btn__burger::after {
+    transform: translateY(-8px); 
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    background: transparent;
+    transform: rotate(180deg);
+ }
+ 
+ .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) 
+ }
+ 
+ .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) 
+ }
+
+ /* ----------- BOUTON HAMBURGER ------------*/
+
+ /* LE HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3E6F3;
+    padding: 10px 30px;
+}
+
+/* LOGO et NOM APP */
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+/** C'est pas parce qu'on a pas encore le vrai logo*/
+.header__logo img {
+    border-radius: 10px;
+}
+
+.header__nom-app {
+   margin-left: 20px; 
+   font-weight: 500;
+   font-size: 30px;
+   color: blue;
+}
+
+/* -------- LOGO et NOM APP --------- */
+
+/* LA NAVIGATION */
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__menu {
+    display: flex;
+}
+
+
+.header__nav li {
+    list-style: none;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* bouton de téléchargement */
+.telecharger {
+    background-color: #1C31EE;
+    color: white;
+    padding: 8px 27px;
+    border-radius: 7px;
+    margin-left: 25px;
+}
+
+/* -----bouton de téléchargement------ */
+
+/* ------- bouton de navigation ------- */
+.header__nav__menu__link {
+    margin-right: 25px;
+    opacity: 60%;
+    font-size: 18px;
+    transition: opacity .2s ease-in;
+}
+
+.header__nav__menu__link:hover {
+    opacity: 100%;
+}
+
+
