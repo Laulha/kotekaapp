@@ -182,9 +182,10 @@
 @media screen and (max-width: 820px) {
     .header__nav__menu {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top: 200px;
         align-items: center;
+        justify-content: start;
         position: absolute;
         background-color: #E3E6F3;
         top: 0;
