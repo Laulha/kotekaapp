@@ -4,10 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', sans-serif;
-    
+    font-family: 'Ubuntu', Arial, sans-serif; 
 }
 
+body {
+    background-color: #EDEDED;
+}
 
 
 /* BOUTON HAMBURGER */
@@ -72,11 +74,12 @@
 .header {
     background-color: #E3E6F3;
     padding: 10px 0;
-    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 10px 0px rgba(255,255,255,0.6);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .header__main {
@@ -158,14 +161,14 @@
 /* PRESENTATION */
 
 .presentation {
-    height: 500px;
+    height: 100vh;
     width: 100%;
     margin-top: 81px;
 
     background-color: #E3E6F3;
     
     position: relative;
-    z-index: -1;
+    
 }
 
 
@@ -220,7 +223,7 @@
     color: rgba(255,255,255,0.7);
 }
 
-.presentation__texte_telechargement a {
+.presentation__texte_telechargement__link {
     display: inline-block;
     text-decoration: none;
     color: rgba(255,255,255,0.9);
@@ -229,9 +232,10 @@
     border-radius: 5px;
     margin: 10px 0 5px 0;
     font-size: 15px;
+    cursor: pointer;
 }
 
-.presentation__texte_telechargement p {
+.presentation__texte_telechargement__msg {
     font-size: 11px;
     font-style: italic;
     font-weight: lighter;
@@ -239,6 +243,54 @@
     margin-left: 5px;
 }
 
+/* ----------TEXTE PRESENTATION----------- */
+
+/* OBJECTIF DE L'APPLICATION */
+
+.objectif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 70px;
+}
+
+.objectif__main__titre {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.objectif__main__container {
+    display: flex;
+    max-width: 820px;
+}
+
+.objectif__main__container__image {
+    width: 245px;
+    height: 448px;
+    background-image: url('images/version_mobile_grand.jpg');
+    background-repeat: no-repeat;
+}
+
+.objectif__main__container__texte {
+    max-width: 536px;
+    margin-left: 40px;
+}
+
+.objectif__main__container__texte p {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(0,0,0,0.6);
+    max-width: 500px;
+    text-align: justify;
+}
+
+.objectif__main__container__texte p:first-of-type {
+    margin-bottom: 30px;
+}
+
+/* ---------OBJECTIF DE L'APPLICATION------------- */
 
 
 @media screen and (min-width: 320px) {
@@ -322,6 +374,29 @@
     }
 
     /* -------IMAGE PRESENTATION-------- */
+
+    /* OBJECTIF DE L'APPLICATION */
+
+    .objectif__main__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 820px;
+    }
+
+    .objectif__main__container__image {
+        background-image: url('images/app_version_mobile.png');
+        height: 366px;
+        width: 200px;
+        margin-bottom: 50px;
+    }
+
+    .objectif__main__container__texte {
+        margin: 0 15px;
+    }
+
+    /* ---------OBJECTIF DE L'APPLICATION------------- */
+
 
 }
 
