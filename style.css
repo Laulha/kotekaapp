@@ -7,8 +7,16 @@
     font-family: 'Ubuntu', Arial, sans-serif; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EDEDED;
+}
+
+h1, h2, h3 {
+    color: #2f1c6a;
 }
 
 
@@ -210,6 +218,7 @@ body {
 
 .presentation__texte__titre {
     line-height: 40px;
+    color: #fff;
 }
 
 .presentation__texte__titre span {
@@ -259,6 +268,7 @@ body {
 .objectif__main__titre {
     text-align: center;
     padding: 60px 0;
+    font-size: 30px;
 }
 
 .objectif__main__container {
@@ -315,6 +325,7 @@ body {
     margin-bottom: 120px;
     max-width: 330px;
     text-align: center;
+    font-size: 30px;
 }
 
 .raison__main__card {
@@ -407,10 +418,10 @@ body {
     font-size: 30px;
     max-width: 446px;
     text-align: center;
+    font-size: 30px;
 }
 
 .fonctionnalite__entete__texte {
-    text-align: center;
     max-width: 840px;
     line-height: 22px;
     color: rgba(0,0,0,0.6);
@@ -450,6 +461,10 @@ body {
     padding: 10px 0 0 10px;
 }
 
+.fonctionnalite__main__article__contenu-texte__titre {
+    color :rgba(0,0,0,0.85)
+}
+
 .fonctionnalite__main__article__contenu-texte__texte {
     padding-top: 20px;
     font-size: 15px;
@@ -459,6 +474,68 @@ body {
 /* ------Contenu des fonctionnalités--------- */
 
 /* --------LES FONCTIONNALITES--------- */
+
+/* LICENCE */
+
+.licence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.licence__titre {
+    padding-bottom: 40px;
+}
+
+.licence__parrainage__recommandation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.licence__parrainage__recommandation__titre  {
+    padding: 20px;
+    text-align: center;
+    background-color: #2f1c6a;
+    color: #E3E6F3;
+    max-width: 600px;
+    margin: 40px 15px 0 15px;
+    border-radius: 10px;
+}
+
+
+.licence__parrainage__texte {
+    max-width: 840px;
+    color: rgba(0,0,0,0.6);
+    margin: 0 10px;
+    line-height: 20px;
+}
+
+.licence__parrainage__texte.licence__parrainage__recommandation {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 5px;
+    max-width: 600px;
+}
+
+.licence__parrainage__texte.licence__parrainage__recommandation strong, 
+.licence__parrainage__texte.licence__parrainage__recommandation i {
+    color: #000;
+    font-size: 20px;
+}
+
+/* -------------- LICENCE ---------- */
+
+/* PIED DE PAGE */
+
+.pied-page {
+    height: 300px;
+    background-color: #000;
+}
 
 @media screen and (min-width: 320px) {
     /* Pour toujours avoir des marges*/
