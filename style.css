@@ -633,7 +633,7 @@ h1, h2, h3 {
     color: rgb(0,0,0);
     padding: 10px 20px;
     background-color: #fff;
-    max-width: 230px;
+    max-width: 240px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -645,17 +645,21 @@ h1, h2, h3 {
     flex-wrap: wrap;
 }
 
-.licence__plan__formules__pays__prix-mois span{
+.prix-mois__valeur {
     color: #ED5555;
+}
+
+.prix-mois__unite {
+    font-size: 12px;
 }
 
 .licence__plan__formules__pays__main__card { 
     padding: 20px 10px;
-    max-width: 250px;
+    width: 250px;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-top: 30px;
+    margin: 30px 10px 10px 0;
     transform: scale(1);
     transition: transform .2s linear;
 }
@@ -679,13 +683,14 @@ h1, h2, h3 {
 }
 
 .licence__plan__formules__pays__main__card__economie span {
-    display: inline-block;
+    display: block;
 }
 
 .licence__plan__formules__pays__main__card__economie span:first-child {
     text-decoration: line-through;
-    font-size: 13px;
+    font-size: 14px;
     color: rgba(0,0,0,.5);
+    margin-bottom: 8px;
 }
 
 .licence__plan__formules__pays__main__card__economie span:last-child {
@@ -693,11 +698,13 @@ h1, h2, h3 {
     color: white;
     padding: 8px 12px;
     border-radius: 30px;
+    max-width: 180px;
+    margin: auto auto;
 }
 
 .licence__plan__formules__pays__main__card__prix {
-    padding: 20px 0;
-    font-size: 35px;
+    padding: 30px 0;
+    font-size: 40px;
     color: #2f1c6a;
     font-weight: 700;
     text-align: center;
