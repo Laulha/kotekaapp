@@ -595,6 +595,7 @@ h1, h2, h3 {
     opacity: 0;
     visibility: hidden;
     transition: opacity .2s linear, visibility .2s linear;
+    z-index: 1;
 }
 
 .licence__plan__select-box__liste.clique {
@@ -637,7 +638,7 @@ h1, h2, h3 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.licence__plan__formules__container {
+.licence__plan__formules__pays__main {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -655,7 +656,15 @@ h1, h2, h3 {
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 30px;
+    transform: scale(1);
+    transition: transform .2s linear;
 }
+
+.licence__plan__formules__pays__main__card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 
 .licence__plan__formules__pays__main__card__titre {
     padding-bottom: 20px;
@@ -701,6 +710,7 @@ h1, h2, h3 {
     border-radius: 10px;
     color: white;
     font-size: 18px;
+    font-family: sans-serif;
 }
 
 /* ------------Licence formule--------- */
