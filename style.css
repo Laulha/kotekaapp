@@ -443,11 +443,6 @@ h1, h2, h3 {
 
 .fonctionnalite__main__article {
     display: flex;
-    /* Pour le responsive de très très petite écran
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    */
     max-width: 366px;
     padding-bottom: 25px;
 }
@@ -478,6 +473,7 @@ h1, h2, h3 {
 /* LICENCE */
 
 .licence {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,7 +483,11 @@ h1, h2, h3 {
 
 .licence__titre {
     padding-bottom: 40px;
+    font-size: 35px;
+    text-align: center;
 }
+
+/* Licence recommandation */
 
 .licence__parrainage__recommandation {
     display: flex;
@@ -527,6 +527,183 @@ h1, h2, h3 {
     color: #000;
     font-size: 20px;
 }
+
+/* ---------Licence recommandation------------- */
+
+/* Licence formule */
+
+.licence__plan {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    margin: auto auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.licence__plan__titre {
+    margin: 25px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.licence__plan__select-box {
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+.licence__plan__select-box p {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+.licence__plan__select-box__titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    background-color: #0f172a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.licence__plan__select-box__titre svg {
+    height: 30px;
+    width: 25px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.licence__plan__select-box__titre span {
+    color: #fff;
+}
+
+.licence__plan__select-box__liste {
+    width: 200px;
+    background-color: #0f172a;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s linear, visibility .2s linear;
+}
+
+.licence__plan__select-box__liste.clique {
+    visibility: visible;
+    opacity: 1;
+}
+
+.licence__plan__select-box__liste__element {
+   padding: 5px 10px;
+   border-radius: 4px;
+   margin: 0 3px;
+}
+
+.licence__plan__select-box__liste__element:hover {
+    background-color: #64748b;
+ }
+
+.licence__plan__select-box__liste__element:first-of-type {
+    padding-top: 10px;
+    margin-top: 2px;
+}
+
+.licence__plan__select-box__liste__element:last-of-type {
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.licence__plan__formules {
+    margin-top: 100px;
+}
+
+
+
+.licence__plan__formules__pays__prix-mois {
+    color: rgb(0,0,0);
+    padding: 10px 20px;
+    background-color: #fff;
+    max-width: 230px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.licence__plan__formules__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.licence__plan__formules__pays__prix-mois span{
+    color: #ED5555;
+}
+
+.licence__plan__formules__pays__main__card { 
+    padding: 20px 10px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 30px;
+}
+
+.licence__plan__formules__pays__main__card__titre {
+    padding-bottom: 20px;
+    color: #2f1c6a;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.licence__plan__formules__pays__main__card__economie {
+    text-align: center;
+}
+
+.licence__plan__formules__pays__main__card__economie span {
+    display: inline-block;
+}
+
+.licence__plan__formules__pays__main__card__economie span:first-child {
+    text-decoration: line-through;
+    font-size: 13px;
+    color: rgba(0,0,0,.5);
+}
+
+.licence__plan__formules__pays__main__card__economie span:last-child {
+    background-color: #ed5555;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px;
+}
+
+.licence__plan__formules__pays__main__card__prix {
+    padding: 20px 0;
+    font-size: 35px;
+    color: #2f1c6a;
+    font-weight: 700;
+    text-align: center;
+}
+
+.licence__plan__formules__pays__main__card__periode  {
+    padding: 20px 10px;
+    background-color: rgb(148, 118, 118);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+/* ------------Licence formule--------- */
 
 /* -------------- LICENCE ---------- */
 
