@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    min-width: 345px;
 }
 
 body {
@@ -732,7 +733,6 @@ h1, h2, h3 {
 /* PIED DE PAGE */
 
 .pied-page {
-    height: 400px;
     background: #355C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -741,7 +741,6 @@ h1, h2, h3 {
 }
 
 .pied-page__contenu {
-    height: 70%;
     max-width: 800px;
     margin: auto auto;
 }
@@ -771,7 +770,7 @@ h1, h2, h3 {
     text-align: center;
     background-color: #c48742;
     max-width: 200px;
-    margin: auto;
+    margin: auto auto 50px auto;
     padding: 15px;
     border-radius: 5px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px, rgba(242, 242, 255, 0.05) 0px 8px 32px;
@@ -779,26 +778,26 @@ h1, h2, h3 {
 
 .pied-page__contact {
     background-color: #38424b;
-    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 40px 0;
 }
 
 .pied-page__contact__info {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 .pied-page__contact__info:first-child {
     margin-right: 50px;
+
 }
 
-.pied-page__contact__info:nth-child(2) span {
-    letter-spacing: 2px;
-}
+
 
 
 
