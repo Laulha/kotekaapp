@@ -19,6 +19,11 @@ h1, h2, h3 {
     color: #2f1c6a;
 }
 
+.div_lien {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* BOUTON HAMBURGER */
 
@@ -727,9 +732,84 @@ h1, h2, h3 {
 /* PIED DE PAGE */
 
 .pied-page {
-    height: 300px;
-    background-color: #000;
+    height: 400px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 100px;
+    color: white;
 }
+
+.pied-page__contenu {
+    height: 70%;
+    max-width: 800px;
+    margin: auto auto;
+}
+
+.pied-page__contenu__engagement {
+    text-align: center;
+    padding: 40px 0 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pied-page__contenu__texte {
+    line-height: 20px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    max-width: 786px;
+    margin: auto 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pied-page__contenu__texte span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.pied-page__contenu__telecharger {
+    text-align: center;
+    background-color: #c48742;
+    max-width: 200px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 16px, rgba(242, 242, 255, 0.05) 0px 8px 32px;
+}
+
+.pied-page__contact {
+    background-color: #38424b;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pied-page__contact__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pied-page__contact__info:first-child {
+    margin-right: 50px;
+}
+
+.pied-page__contact__info:nth-child(2) span {
+    letter-spacing: 2px;
+}
+
+
+
+.pied-page__contact__info svg {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+
 
 @media screen and (min-width: 320px) {
     /* Pour toujours avoir des marges*/
