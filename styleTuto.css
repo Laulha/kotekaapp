@@ -1,0 +1,106 @@
+.tutoriel {
+    margin: 81px auto 0 auto;
+    max-width: 740px;
+    padding: 50px 20px;
+}
+
+.tutoriel__intro p {
+    line-height: 26px;
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.tutoriel__intro p:nth-child(3) {
+    font-style: italic;
+    color: rgba(0,0,0,0.9);
+}
+
+.tutoriel__partie__titre {
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tutoriel__partie__video {
+    margin-bottom: 40px;
+}
+
+.tutoriel__partie__video__titre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0 15px 0;
+    font-size: 25px;
+    color: #062672;
+}
+
+.tutoriel__partie__video__titre__action {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.tutoriel__partie__video__titre__action__lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    background-color: #d54444;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+.tutoriel__partie__video__titre__action__lien:nth-child(1) {
+    margin-right: 15px;
+}
+
+.tutoriel__partie__video__titre__action__lien__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    margin-right: 5px;
+    background-color: #e77272;
+    border-radius: 3px;
+}
+
+.tutoriel__partie__video__titre__action__lien__logo svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.tutoriel__partie__video__contenu {
+    line-height: 22px;
+    color: rgba(0,0,0,.8);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+.tutoriel__consigne {
+    line-height: 26px;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    margin-top: 70px;
+}
+
+
+.pied-page {
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 687px) {
+    .tutoriel__partie__video__titre__action {
+        margin-top: 20px;
+    }
+
+}
