@@ -856,7 +856,7 @@ h1, h2, h3 {
 
     .header__nav__menu {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding-top: 200px;
         align-items: center;
         justify-content: start;
