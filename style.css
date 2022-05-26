@@ -842,6 +842,22 @@ h1, h2, h3 {
     .raison__main__card:nth-child(3) {
         margin-right: 0;
     }
+
+    .pied-page__contact {
+        flex-direction: column;
+    }
+
+    .pied-page__contact.one .pied-page__contact__info:nth-child(2)  {
+        padding-right: 13px;
+    }
+
+    .pied-page__contact.two .pied-page__contact__info:nth-child(2)  {
+        padding-right: 7px;
+    }
+
+    .pied-page__contact.two .pied-page__contact__info:nth-child(1)  {
+        padding-right: 21px;
+    }
     
 }
 
