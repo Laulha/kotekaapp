@@ -782,14 +782,24 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 0 0 15px 0;
 }
+
+.pied-page__contact.one {
+    padding-top: 46px;
+    padding-right: 20px;
+}
+
+.pied-page__contact.two {
+    padding-bottom: 44px;
+}
+
 
 .pied-page__contact__info {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .pied-page__contact__info:first-child {
