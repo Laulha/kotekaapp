@@ -639,14 +639,15 @@ h1, h2, h3 {
     color: rgb(0,0,0);
     padding: 10px 20px;
     background-color: #fff;
-    max-width: 240px;
+    max-width: 260px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .licence__plan__formules__pays__main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -693,23 +694,25 @@ h1, h2, h3 {
 }
 
 .licence__plan__formules__pays__main__card__economie span:first-child {
-    text-decoration: line-through;
-    font-size: 14px;
+    /*text-decoration: line-through;*/
+    font-size: 16px;
     color: rgba(0,0,0,.5);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
-.licence__plan__formules__pays__main__card__economie span:last-child {
+.promo {
     background-color: #ed5555;
     color: white;
     padding: 8px 12px;
     border-radius: 30px;
     max-width: 180px;
     margin: auto auto;
+    margin-top: 20px;
 }
 
 .licence__plan__formules__pays__main__card__prix {
-    padding: 30px 0;
+    padding: 20px 0;
     font-size: 40px;
     color: #2f1c6a;
     font-weight: 700;

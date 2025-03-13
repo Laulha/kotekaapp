@@ -51,14 +51,14 @@ btnSelectPays.addEventListener('click', () => {
 
 const elementListeSelcection = document.querySelectorAll('.licence__plan__select-box__liste div');
 const titrePays = document.querySelector('.licence__plan__select-box__titre span');
-const formuleAlgerie = document.getElementById('algerie');
+const formuleCongoRc = document.getElementById('congo_rc');
 const autreFormule = document.getElementById('autre');
 var paysAncien = titrePays.innerHTML;
 
 if (paysAncien != 'Algérien') {
     autreFormule.style.display = 'none';
 } else {
-    formuleAlgerie.style.display = 'none';
+    formuleCongoRc.style.display = 'none';
 }
 
 
@@ -75,12 +75,12 @@ elementListeSelcection.forEach(element => {
     
         titrePays.innerHTML = pays;
 
-        if (pays != 'Algérie') {
-            $("#algerie").css('display', 'none')
+        if (pays != 'Congo RC') {
+            $("#congo_rc").css('display', 'none')
             $("#autre").fadeIn("slow");
         } else {
             $("#autre").css('display', 'none')
-            $("#algerie").fadeIn("slow");
+            $("#congo_rc").fadeIn("slow");
         }
 
     })
