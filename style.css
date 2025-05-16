@@ -659,6 +659,35 @@ h1, h2, h3 {
 
 .prix-mois__unite {
     font-size: 12px;
+    margin: 2px 4px;
+}
+
+.prix_reduction {
+    position: absolute;
+    top: 4px;
+    right: 44px;
+    display: block;
+    background: #ed5555;
+    border-radius: 63%;
+    padding: 7px;
+    font-size: 11px;
+    color: white;
+    transform: rotate(45deg);
+}
+
+.petite_annonce {
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    color: #b11c1c;
+    margin-left: 42px;
+    margin-bottom: 30px;
+}
+
+.indication_offre {
+    display: block;
+    color: #f3baba;
+    margin-top: 5px;
 }
 
 .licence__plan__formules__pays__main__card { 
@@ -672,6 +701,42 @@ h1, h2, h3 {
     transition: transform .2s linear;
 }
 
+.licence__plan__formules__pays__main__card__prix_init {
+    position: relative;
+    height: 45px;
+    display: flex;
+    font-size: 20px;
+    color: #3c3a43;
+    justify-content: start;
+    align-items: end;
+    margin-bottom: 5px;
+}
+
+.periode_cout {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 13px;
+    background: #ed5555;
+    padding: 5px 18px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.bouton_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    background: #0f172a;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    /*cursor: pointer;*/
+}
+
 .licence__plan__formules__pays__main__card:hover {
     transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -679,12 +744,27 @@ h1, h2, h3 {
 
 
 .licence__plan__formules__pays__main__card__titre {
-    padding-bottom: 20px;
-    color: #2f1c6a;
-    font-size: 20px;
+    border-radius: 4px;
+    color: #ed5555;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
+    background: #0f172a;
+    margin: -20px -10px;
+    padding: 20px 10px;
 }
+
+.licence__plan__formules__pays__main__card__titre::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; /* ou ajuste selon la hauteur souhaitée */
+    width: 100%;
+    height: 2px; /* épaisseur du soulignement */
+    background-color: currentColor; /* ou une autre couleur */
+}
+
+
 
 .licence__plan__formules__pays__main__card__economie {
     text-align: center;
@@ -695,11 +775,11 @@ h1, h2, h3 {
 }
 
 .licence__plan__formules__pays__main__card__economie span:first-child {
-    /*text-decoration: line-through;*/
-    font-size: 16px;
-    color: rgba(0,0,0,.5);
-    margin-bottom: 12px;
-    font-weight: bold;
+    padding: 20px 0;
+    font-size: 40px;
+    color: #2f1c6a;
+    font-weight: 700;
+    text-align: center;
 }
 
 .promo {
@@ -712,8 +792,11 @@ h1, h2, h3 {
     margin-top: 20px;
 }
 
+
 .licence__plan__formules__pays__main__card__prix {
-    padding: 20px 0;
+    position: relative;
+    margin-top: 30px;
+    padding: 15px 0px 0;
     font-size: 40px;
     color: #2f1c6a;
     font-weight: 700;
@@ -936,7 +1019,7 @@ h1, h2, h3 {
         right: 10%;
         height: 307px;
         width: 310px;
-        background-image: url('images/appAccueil2\ 1.jpg');
+        background-image: url('images/appAccueil2_1.jpg');
     }
 
     /* -------IMAGE PRESENTATION-------- */
