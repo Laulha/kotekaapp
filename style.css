@@ -114,6 +114,7 @@ h1, h2, h3 {
 /** C'est pas parce qu'on a pas encore le vrai logo*/
 .header__logo img {
     border-radius: 10px;
+    height: 75px;
 }
 
 .header__nom-app {
