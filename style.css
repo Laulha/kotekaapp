@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ubuntu', Arial, sans-serif; 
+    font-family: 'Ubuntu', Arial, sans-serif;
 }
 
 html {
@@ -239,12 +239,17 @@ h1, h2, h3 {
     color: rgba(255,255,255,0.7);
 }
 
+.presentation__texte__contenu strong {
+    color: #8e96df;
+    font-weight: 700;
+}
+
 .presentation__texte_telechargement__link {
     display: inline-block;
     text-decoration: none;
     color: rgba(255,255,255,0.9);
     background-color: #1C31EE;
-    padding: 7px 20px;
+    padding: 12px 24px;
     border-radius: 5px;
     margin: 10px 0 5px 0;
     font-size: 15px;
@@ -272,10 +277,23 @@ h1, h2, h3 {
     padding-bottom: 70px;
 }
 
+.objectif__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type_commerce {
+    color: #0f172a;
+}
+
 .objectif__main__titre {
     text-align: center;
     padding: 60px 0;
     font-size: 30px;
+    max-width: 360px;
+    line-height: 35px;
 }
 
 .objectif__main__container {
@@ -339,8 +357,8 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 310px;
     position: relative;
     background-color: #6171AC;
     border-radius: 10px;
@@ -363,8 +381,8 @@ h1, h2, h3 {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 148px;
-    height: 110px;
+    width: 125px;
+    height: 100px;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -433,6 +451,7 @@ h1, h2, h3 {
     line-height: 22px;
     color: rgba(0,0,0,0.6);
     margin: 30px 10px 0 10px;
+    text-align: justify;
 }
 
 /* -----Entete des fonctionnalités-------- */
