@@ -7,6 +7,12 @@
     font-family: 'Ubuntu', Arial, sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
 html {
     scroll-behavior: smooth;
     min-width: 345px;

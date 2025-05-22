@@ -1,3 +1,9 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
 .tutoriel {
     margin: 81px auto 0 auto;
     max-width: 740px;
